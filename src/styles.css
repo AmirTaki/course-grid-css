@@ -7,10 +7,15 @@ body{
     display: grid; 
     height: 400px;
     grid-template : repeat(3, 1fr)  / repeat(3, minmax(200px, 1fr));
-    /* column-gap: 20px; */
-    /* row-gap: 30px; */
-    gap:40px 20px;
-}
+   
+    
+    /* justify-items: stretch; */
+    /* justify-items: end; */
+    /* justify-items: start; */
+    justify-items: center;
+
+    
+}   
 
 .grid-item {
     color: white;

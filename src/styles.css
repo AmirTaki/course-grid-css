@@ -5,13 +5,11 @@ body{
     border: 6px solid black;   
     /* display: inline-grid;  */
     display: grid; 
-    grid-template-columns: repeat(3, minmax(200px, 1fr)) ;
-
-    /* grid-template-rows: 100px 150px 200px; */
-    /* grid-template-rows : repeat(3, 100px) ; */
-    
     height: 400px;
-    grid-template-rows : repeat(3, 1fr) ;
+    /* grid-template-columns: repeat(3, minmax(200px, 1fr)) ;
+    grid-template-rows : repeat(3, 1fr) ; */
+    /* grid-template: rows / columns  ; */
+    grid-template : repeat(3, 1fr)  / repeat(3, minmax(200px, 1fr))
 }
 
 .grid-item {

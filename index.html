@@ -23,6 +23,9 @@
 <!-- 6:50 -->
 <!-- https://www.youtube.com/watch?v=p4Ith5qRM1g -->
 
+
+<!-- ----------------------------------------------------------------------------------------- -->
+
 <!-- 
 TERMINOLOGY:
 
@@ -34,6 +37,7 @@ TERMINOLOGY:
 6-  grid area
 -->
 
+<!-- ----------------------------------------------------------------------------------------- -->
 
 <!-- 
 GRID CONTAINER PROPERTIES : 
@@ -56,9 +60,28 @@ GRID CONTAINER PROPERTIES :
 16-   grid-auto-flow
 -->
 
+<!-- ----------------------------------------------------------------------------------------- -->
 
-<!-- 
+<!--  DISPLAY 
 Type display :  1- grid 2- inline-grid
+-->
+<!-- ----------------------------------------------------------------------------------------- -->
 
+<!-- GRID-TEMPLATE-COLUMNS
+ 
+specifies the number of columns (width) in a grid layout
+
+type grid template columns : 
+
+1- Non-negative length value link px, % etc
+grid-template-columns: 200px 200px 200px; 
+
+2- Fration of th free space available
+grid-template-columns: 1fr 2fr 1fr ; 
+
+3- repeat() and minmax()
+grid-template-columns: repeat(3, 200px);
+grid-template-columns: repeat(3, minmax(200px, 1fr)) 
 
 -->
+<!-- ----------------------------------------------------------------------------------------- -->

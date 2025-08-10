@@ -1,0 +1,32 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: gray;
+}
+.container{
+    background-color: #0000ff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 50%;
+}
+.item {
+    border: 2px solid black;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item:nth-child(1){
+    background-color: red ;
+}
+.item:nth-child(2){
+    background-color: red ;
+}
+.item:nth-child(4){
+    background-color: red ;
+}
+.item:nth-child(3){
+    background-color: red ;
+}

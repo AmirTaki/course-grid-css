@@ -5,19 +5,8 @@ body{
     border: 6px solid orangered;   
     /* display: inline-grid;  */
     display: grid; 
-    height: 800px;
-    grid-template : repeat(3, 200px)  / repeat(3, 200px);
-
-    /* justify-content: space-evenly; */
-
-    /* align-content: space-evenly; */
-
-
-    /* place-content : align-content  justify-content  -> place-content : column row */
-    
-    /* place-content: start center ; */
-    place-content: space-evenly;
-  
+    /* grid-auto-flow: row; */
+    grid-auto-flow:  column;
 }
 
 .grid-item {

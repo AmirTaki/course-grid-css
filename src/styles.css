@@ -7,14 +7,12 @@ body{
     display: grid; 
     height: 400px;
     grid-template : repeat(3, 1fr)  / repeat(3, minmax(200px, 1fr));
-   
-    
-    /* justify-items: stretch; */
-    /* justify-items: end; */
-    /* justify-items: start; */
-    justify-items: center;
+    /* justify-items: center; */
 
-    
+    /* align-items: stretch; */
+    /* align-items: start; */
+    /* align-items: end; */
+    align-items: center;
 }   
 
 .grid-item {

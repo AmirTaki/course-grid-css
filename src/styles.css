@@ -2,17 +2,19 @@ body{
     margin: 0;
 }
 .container{
-    border: 6px solid black;   
+    border: 6px solid orangered;   
     /* display: inline-grid;  */
     display: grid; 
-    height: 400px;
-    grid-template : repeat(3, 1fr)  / repeat(3, minmax(200px, 1fr));
-    /* justify-items: center; */
-    /* align-items: center; */
-    
-    /* place-items:  align-items justiy-items; => place-items:  column row; */
-    place-items:end start
-}   
+    height: 800px;
+    grid-template : repeat(3, 200px)  / repeat(3, 200px);
+
+    /* justify-content: start; */
+    /* justify-content: center; */
+    /* justify-content: end; */
+     /* justify-content: space-between  */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+}
 
 .grid-item {
     color: white;

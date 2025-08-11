@@ -8,11 +8,10 @@ body{
     height: 400px;
     grid-template : repeat(3, 1fr)  / repeat(3, minmax(200px, 1fr));
     /* justify-items: center; */
-
-    /* align-items: stretch; */
-    /* align-items: start; */
-    /* align-items: end; */
-    align-items: center;
+    /* align-items: center; */
+    
+    /* place-items:  align-items justiy-items; => place-items:  column row; */
+    place-items:end start
 }   
 
 .grid-item {

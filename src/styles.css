@@ -25,10 +25,14 @@ body{
 }
 .item-2{
     background-color: #b95f21;
-    align-self:stretch ;
-    align-self:start ;
-    align-self:end;
-    align-self:center;
+    
+    /* align-self:start ;
+    justify-self: center; */
+
+    /* place-self: align-self  justify-self; */
+
+    place-self: start center;   
+    place-self: start;
 }
 .item-3{
     background-color: #1c4c56;

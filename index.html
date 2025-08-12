@@ -39,7 +39,7 @@ TERMINOLOGY:
 6-  grid area
 -->
 
-<!-- ----------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------- GRID CONTAINER PROPERTIES  -------------------------------------------------- -->
 
 <!-- 
 GRID CONTAINER PROPERTIES : 
@@ -69,184 +69,192 @@ GRID CONTAINER PROPERTIES :
 -->
 
 <!-- ----------------------------------------------------------------------------------------- -->
+<!-- 
+1)  DISPLAY 
+    Type display :  1- grid 2- inline-grid
 
-<!--  DISPLAY 
-Type display :  1- grid 2- inline-grid
--->
-<!-- ----------------------------------------------------------------------------------------- -->
+--------------------------------------------------------------------------------------------------- 
 
-<!-- GRID-TEMPLATE-COLUMNS
+2) GRID-TEMPLATE-COLUMNS
  
-specifies the number of columns (width) in a grid layout
+    specifies the number of columns (width) in a grid layout
 
-type grid template columns : 
+    type grid template columns : 
 
-1- Non-negative length value link px, % etc
-grid-template-columns: 200px 200px 200px; 
+    1- Non-negative length value link px, % etc
+    grid-template-columns: 200px 200px 200px; 
 
-2- Fration of th free space available
-grid-template-columns: 1fr 2fr 1fr ; 
+    2- Fration of th free space available
+    grid-template-columns: 1fr 2fr 1fr ; 
 
-3- repeat() and minmax()
-grid-template-columns: repeat(3, 200px);
-grid-template-columns: repeat(3, minmax(200px, 1fr)) 
+    3- repeat() and minmax()
+    grid-template-columns: repeat(3, 200px);
+    grid-template-columns: repeat(3, minmax(200px, 1fr)) 
 
--->
-<!-- ----------------------------------------------------------------------------------------- -->
-<!-- GRID-TEMPLATE-ROWS
+---------------------------------------------------------------------------------------------- 
 
-type grid template columns : 
+3) GRID-TEMPLATE-ROWS
 
-1- Non-negative length value link px, % etc
-grid-template-rows: 200px 200px 200px; 
+    type grid template columns : 
 
-2- Fration of th free space available
-grid-template-rows: 1fr 2fr 1fr ; 
+    1- Non-negative length value link px, % etc
+    grid-template-rows: 200px 200px 200px; 
 
-3- repeat() and minmax()
-grid-template-rows: repeat(3, 200px);
-grid-template-rows: repeat(3, minmax(200px, 1fr)) 
+    2- Fration of th free space available
+    grid-template-rows: 1fr 2fr 1fr ; 
 
--->
+    3- repeat() and minmax()
+    grid-template-rows: repeat(3, 200px);
+    grid-template-rows: repeat(3, minmax(200px, 1fr)) 
 
-<!-- ----------------------------------------------------------------------------------------- -->
+---------------------------------------------------------------------------------------------- 
 
-<!-- GRID TEMPLATE
-shorthand for specifying rows nad columns :
-
-1- value is <grid-template-rows> / <grid-template-columns>
-    grid-template : repeat(3, 1fr) / repeat(3, minmax(200px, 1fr))
+4) GRID TEMPLATE
     
--->
+    shorthand for specifying rows nad columns :
 
-<!-- ----------------------------------------------------------------------------------------- -->
+    1- value is <grid-template-rows> / <grid-template-columns>
+        grid-template : repeat(3, 1fr) / repeat(3, minmax(200px, 1fr))
+        
 
-<!-- GAP & COLUMN GAP & ROW GAP
+------------------------------------------------------------------------------------------------- 
 
-specify the gap between columns using => column-gap
+5) GAP & COLUMN GAP & ROW GAP
 
-specify the gap between rows useing => row-gap
+    specify the gap between columns using => column-gap
 
-specify both row and column gap useing => gap: <row gap> <column gap>
-    
-    1- values can be a non negative value or a percentage
-    
--->
+    specify the gap between rows useing => row-gap
 
-<!-- ----------------------------------------------------------------------------------------- -->
+    specify both row and column gap useing => gap: <row gap> <column gap>
+        
+        1- values can be a non negative value or a percentage
+        
 
-<!--  JUSTIFY ITEMS 
+----------------------------------------------------------------------------------------------- 
 
-Around the axis row -> Around the grid line row :
+6)  JUSTIFY ITEMS 
 
-justify-items: stretch;
-justify-items: end; 
-justify-items: start; 
-justify-items: center;
+    Around the axis row -> Around the grid line row :
 
--->
+    justify-items: stretch;
+    justify-items: end; 
+    justify-items: start; 
+    justify-items: center;
 
-<!-- ----------------------------------------------------------------------------------------- -->
+----------------------------------------------------------------------------------------------- 
 
-<!--  ALIGN ITEMS 
+7)  ALIGN ITEMS 
 
-Around the axis column -> Around the grid line column :
+    Around the axis column -> Around the grid line column :
 
-align-items: stretch;
-align-items: start;
-align-items: end;
-align-items: center
+    align-items: stretch;
+    align-items: start;
+    align-items: end;
+    align-items: center
 
+----------------------------------------------------------------------------------------- 
 
--->
+8)  PLACE ITEMS    : lignmet & spacing within cell
 
-<!-- ----------------------------------------------------------------------------------------- -->
-
-<!--     PLACE ITEMS    : lignmet & spacing within cell
-
-1- justify-items : for alignment along the row axis
-2- align-items   : for alignment along the column axis
-3- place-items   : is a shorthand for <align-items> <justify-items>
-    
-    
+    1- justify-items : for alignment along the row axis
+    2- align-items   : for alignment along the column axis
+    3- place-items   : is a shorthand for <align-items> <justify-items>    
     4- values can be start , end , center, stretch (default)
+        
+------------------------------------------------------------------------------------------- 
+  
+9)   JUSTIFY CONTENT :
     
+    Item around the axis row  -> Item arround the grid line row
+
+    justify-content : start (default)
+    justify-content : center 
+    justify-content : end
+    justify-content : space-arround
+    justify-content : space-between
+    justify-content : space-evenly
+
+
+
+ ----------------------------------------------------------------------------------------- 
+
+10)  ALIGIN CONTENT :
+
+        Item around the axis column  -> Item arround the grid line column
+
+        align-content: start; 
+        align-content: center; 
+        align-content: end; 
+        align-content: space-between;
+        align-content: space-around;
+        align-content: space-evenly;
+
+
+
+ ----------------------------------------------------------------------------------------- 
+
+11)  PLACE CONTENT : alignment & spacing within container
+
+        1- justify-content : for alignment and spacing along the row axis
+        2- aling-content   : for alignment and spacing along the column axis
+        3- place-content   : is a shorthand for <align-content> <justify-content>
+            
+        4- values can be start, end , center , stretch, space-between, space-around and space-evenly
+            
+
+
+----------------------------------------------------------------------------------------- 
+12) GRID AUTO FLOW : 
+
+        1-  grid-auto-flow: row; 
+        2-  grid-auto-flow:  column;
+
+
+----------------------------------------------------------------------------------------- 
+13)    GRID AUTO PROPERTIES => grid-auto-columns , grid-auto-rows
+
+        /// grid auto flow :
+
+        1- grid-auto-flow : controls how auto-placed items get inserted into the grid
+        2- Possible values are row, column, dense,  row dense, column dence
+
+
+        /// grid auto columns
+        3- grid-auto-columns : for setting default column width
+
+        /// grid auto rows
+        4- grid-auto-rows   :  for setting default row height
+
+        5- Value can be pixel, percentage, minmax, auto(default), etc
+
+
+- ----------------------------------------------------------------------------------------- 
+
+14)    GRID 
+
+    grid :
+        /* grid : grid-template-columns / grid-template-rows  */
+        grid : repeat(2, 2fr) 1fr / repeat(2, 3fr) 1fr;
+
+- ----------------------------------------------------------------------------------------- 
+
 -->
 
-<!-- ----------------------------------------------------------------------------------------- -->
 
-<!--    JUSTIFY CONTENT :
-Item around the axis row  -> Item arround the grid line row
+<!--------------------------------------------------------- GRID ITEM PROPERTIES            ------------------------------------------------------------- -->
+<!-- 
+ grid item properties : 
 
-justify-content : start (default)
-justify-content : center 
-justify-content : end
-justify-content : space-arround
-justify-content : space-between
-justify-content : space-evenly
-
--->
-
-<!-- ----------------------------------------------------------------------------------------- -->
-
-<!-- ALIGIN CONTENT
-
-Item around the axis column  -> Item arround the grid line column
-
-align-content: start; 
-align-content: center; 
-align-content: end; 
-align-content: space-between;
-align-content: space-around;
-align-content: space-evenly;
-
--->
-
-<!-- ----------------------------------------------------------------------------------------- -->
-
-<!--  PLACE CONTENT : alignment & spacing within container
-
-1- justify-content : for alignment and spacing along the row axis
-2- aling-content   : for alignment and spacing along the column axis
-3- place-content   : is a shorthand for <align-content> <justify-content>
+ 1-   grid-column-start
+ 2-   grid-column-end
+ 3-   grid-row-start
+ 4-   grid-row-end
+ 5-   grid-column
+ 6-   grid-row
+ 7-   justify-self
+ 8-   align-self
+ 9-   place-self
     
-4- values can be start, end , center , stretch, space-between, space-around and space-evenly
-    
--->
 
-<!-- ----------------------------------------------------------------------------------------- -->
-<!-- GRID AUTO FLOW : 
-
-1-  grid-auto-flow: row; 
-2-  grid-auto-flow:  column;
 
 -->
-
-<!-- ----------------------------------------------------------------------------------------- -->
-<!--    GRID AUTO PROPERTIES => grid-auto-columns , grid-auto-rows
-
-/// grid auto flow :
-
-1- grid-auto-flow : controls how auto-placed items get inserted into the grid
-2- Possible values are row, column, dense,  row dense, column dence
-
-
-/// grid auto columns
-3- grid-auto-columns : for setting default column width
-
-/// grid auto rows
-4- grid-auto-rows   :  for setting default row height
-
-5- Value can be pixel, percentage, minmax, auto(default), etc
-
--->
-<!-- ----------------------------------------------------------------------------------------- -->
-
-<!-- GRID 
-
-grid : 
-
-   /* grid : grid-template-columns / grid-template-rows  */
-    grid : repeat(2, 2fr) 1fr / repeat(2, 3fr) 1fr;
--->
-

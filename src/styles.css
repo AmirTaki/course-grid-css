@@ -25,10 +25,10 @@ body{
 }
 .item-2{
     background-color: #b95f21;
-    justify-self: stretch;
-    justify-self: start;
-    justify-self: end;
-    justify-self: center;
+    align-self:stretch ;
+    align-self:start ;
+    align-self:end;
+    align-self:center;
 }
 .item-3{
     background-color: #1c4c56;

@@ -22,9 +22,9 @@ body{
 
 .item-1{
     background-color: #b4bf35;
-    grid-column-start: 1;
-    /* grid-column-end: 3; */
-    grid-column-end: span 2;
+    grid-row-start: 1;
+    /* grid-row-end : 3; */
+    grid-row-end : span 2
 }
 .item-2{
     background-color: #b95f21;
@@ -37,11 +37,12 @@ body{
 }
 .item-5{
     background-color: #6b0803;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end : span 2
 }
 .item-6{
     background-color: #cfb276;
-    grid-column-start: 1;
-    grid-column-end: span 3;
 }
 .item-7{
     background-color: #b95f21;

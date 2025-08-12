@@ -5,12 +5,7 @@ body{
     border: 6px solid orangered;   
     /* display: inline-grid;  */
     display: grid; 
-
-
-
-    /* grid : grid-template-columns / grid-template-rows  */
-    grid : repeat(2, 2fr) 1fr / repeat(2, 3fr) 1fr;
-    
+    grid-template: repeat(3, 200px) / repeat(3, 200px);
     
         
 
@@ -27,6 +22,9 @@ body{
 
 .item-1{
     background-color: #b4bf35;
+    grid-column-start: 1;
+    /* grid-column-end: 3; */
+    grid-column-end: span 2;
 }
 .item-2{
     background-color: #b95f21;
@@ -42,6 +40,8 @@ body{
 }
 .item-6{
     background-color: #cfb276;
+    grid-column-start: 1;
+    grid-column-end: span 3;
 }
 .item-7{
     background-color: #b95f21;
